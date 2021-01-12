@@ -47,6 +47,8 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        Application.targetFrameRate = 120;
     }
 
     public bool GetIsActive() => _isActive;

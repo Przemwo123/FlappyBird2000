@@ -14,6 +14,7 @@ public class Bird : MonoBehaviour
     {
         _rigidbody2DBird = GetComponent<Rigidbody2D>();
         _rigidbody2DBird.simulated = false;
+        transform.GetChild(0).gameObject.SetActive(false);
     }
 
     void Update()
@@ -46,6 +47,7 @@ public class Bird : MonoBehaviour
         if (!_isDead)
         {
             _isDead = true;
+            transform.GetChild(0).gameObject.SetActive(true);
             Instantiate(soundKill);
             _rigidbody2DBird.velocity = (Vector2.up * jumpForce) + Vector2.right;
             GameManager.S.Die();

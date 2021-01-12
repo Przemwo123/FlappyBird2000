@@ -1248,7 +1248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.5019608}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1694,7 +1694,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: SPACE
+  m_Text: SCORE
 --- !u!222 &1181062172
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2577,7 +2577,6 @@ GameObject:
   - component: {fileID: 2132541496}
   - component: {fileID: 2132541498}
   - component: {fileID: 2132541497}
-  - component: {fileID: 2132541499}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -2625,12 +2624,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f294b739a377bfe418d40d381807b481, type: 3}
-    m_FontSize: 18
-    m_FontStyle: 1
+    m_Font: {fileID: 12800000, guid: 9ed2c9ec86b9f1d48b56819e5a8101d9, type: 3}
+    m_FontSize: 24
+    m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 1
-    m_MaxSize: 92
+    m_MinSize: 0
+    m_MaxSize: 300
     m_Alignment: 4
     m_AlignByGeometry: 1
     m_RichText: 1
@@ -2646,18 +2645,3 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2132541495}
   m_CullTransparentMesh: 0
---- !u!114 &2132541499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2132541495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0.3207547, g: 0.0257209, b: 0.0257209, a: 1}
-  m_EffectDistance: {x: 2, y: -2}
-  m_UseGraphicAlpha: 1

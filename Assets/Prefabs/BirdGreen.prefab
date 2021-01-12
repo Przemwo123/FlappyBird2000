@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2096736505830358152}
   - component: {fileID: 1008017003}
   - component: {fileID: 1008017002}
-  - component: {fileID: 4291228328896895691}
+  - component: {fileID: 3562133408558567078}
   m_Layer: 10
   m_Name: BirdGreen
   m_TagString: Untagged
@@ -30,7 +30,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 6611666205268223943}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -121,13 +122,60 @@ MonoBehaviour:
   soundJump: {fileID: 2019288048737586535, guid: e72b3c9a783a9144eade45b2fc731ea1, type: 3}
   soundKill: {fileID: 8620308899713368307, guid: b10ae301e810af64f803834f7ef57241, type: 3}
   jumpForce: 8
---- !u!60 &4291228328896895691
-PolygonCollider2D:
+--- !u!58 &3562133408558567078
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2096736505830358155}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.05}
+  serializedVersion: 2
+  m_Radius: 0.3
+--- !u!1 &4542631050461423009
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6611666205268223943}
+  - component: {fileID: 2491139235948212473}
+  m_Layer: 11
+  m_Name: ColliderDead
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6611666205268223943
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4542631050461423009}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2096736505830358153}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &2491139235948212473
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4542631050461423009}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
